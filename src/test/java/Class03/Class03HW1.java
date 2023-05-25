@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class Class03HW1 extends CommonMethods {
     public static void main(String[] args) throws InterruptedException {
-        openBrowserAndLaunchApplication("http://practice.syntaxtechs.net/input-form-demo.php");
+        openBrowserAndLaunchApplication("http://practice.syntaxtechs.net/input-form-demo.php", "chrome");
         WebElement firstName = driver.findElement(By.cssSelector("input[name='first_name']"));
         firstName.sendKeys("Kenny");
         WebElement lastName = driver.findElement(By.cssSelector("input[name='last_name']"));

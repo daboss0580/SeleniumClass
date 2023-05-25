@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class Trial extends CommonMethods {
     public static void main(String[] args) throws InterruptedException {
-        openBrowserAndLaunchApplication("https://www.google.com/");
+        openBrowserAndLaunchApplication("https://www.google.com/", "chrome");
         Thread.sleep(2000);
         WebElement cookies=driver.findElement(By.xpath("//*[text()='Accept all']"));
         if (cookies.isDisplayed()){
