@@ -17,6 +17,6 @@ public class Try extends CommonMethods {
         WebElement createAcc=driver.findElement(By.xpath("//*[text()='Create new account']"));
         createAcc.click();
         WebElement dd1=driver.findElement(By.xpath("//select[@id=\"day\"]"));
-        singleSelectFromDropdownByIndex(15,dd1);
+        singleSelectFromDropdownByIndex(11,dd1);
     }
 }

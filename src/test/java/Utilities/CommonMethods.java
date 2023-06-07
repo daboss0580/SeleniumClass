@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.Duration;
+
 public class CommonMethods {
     public static WebDriver driver;
     public static final void openBrowserAndLaunchApplication(String url, String browser){
@@ -24,6 +26,7 @@ public class CommonMethods {
         //navigate to the url
         driver.get(url);
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
     public static final void closeBrowser(){
         if(driver!=null) {
@@ -46,6 +49,7 @@ public class CommonMethods {
     }
 
     public static void singleSelectFromDropdownByIndex(int index, WebElement element) {
+
         Select select = new Select(element);
         select.selectByIndex(index);
     }
