@@ -9,5 +9,6 @@ public class TestClass {
         driver.get("https://www.amazon.com");
         System.out.println(driver.getTitle());
         driver.quit();
+
     }
 }

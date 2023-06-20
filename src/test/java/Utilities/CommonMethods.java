@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class CommonMethods {
+ public class CommonMethods {
     public static WebDriver driver;
     public static final void openBrowserAndLaunchApplication(String url, String browser){
         switch (browser){
@@ -52,6 +52,7 @@ public class CommonMethods {
 
         Select select = new Select(element);
         select.selectByIndex(index);
+
     }
 }
 
